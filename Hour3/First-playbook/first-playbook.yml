@@ -14,3 +14,8 @@
         owner: root
         group: root
         mode: '0644'
+    - name: Start apache2 service
+      systemd:
+        name: apache2
+        state: started
+        enabled: true
